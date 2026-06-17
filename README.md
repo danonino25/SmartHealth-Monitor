@@ -20,11 +20,6 @@
 | HistorialScreen | Lecturas persistidas en Room con Flow reactivo |
 | AlertaScreen | AlertDialog MD3 + Snackbar de confirmación |
  
-## Capturas de pantalla
-![Login](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
-![Historial](screenshots/historial.png)
-![Alerta](screenshots/alerta.png)
  
 
 ## Autor

@@ -65,3 +65,4 @@ Región de evidencias visuales del comportamiento de la aplicación en el emulad
 ## Autor
 
 Ana María Barrientos Guerrero — UTNG — Ing. en Desarrollo y Gestión de Software (GIDS6093)
+

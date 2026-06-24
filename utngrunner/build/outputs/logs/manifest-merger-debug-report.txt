@@ -113,7 +113,6 @@ ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Intel
 application
 ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:17:5-48:19
 INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:17:5-48:19
-INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:17:5-48:19
 MERGED from [com.google.android.gms:play-services-wearable:20.0.1] C:\Users\andre\.gradle\caches\8.13\transforms\c862068a39e918b843f0c0a435b293c2\transformed\play-services-wearable-20.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-wearable:20.0.1] C:\Users\andre\.gradle\caches\8.13\transforms\c862068a39e918b843f0c0a435b293c2\transformed\play-services-wearable-20.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-games-v2:21.0.0] C:\Users\andre\.gradle\caches\8.13\transforms\1de9b50392ec25a0a2aff8e35214568a\transformed\play-services-games-v2-21.0.0\AndroidManifest.xml:12:5-31:19
@@ -150,8 +149,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\an
 		ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:21:9-35
 	android:label
 		ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:20:9-41
-	android:testOnly
-		INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml
 	android:icon
 		ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:19:9-43
 	android:allowBackup
@@ -198,14 +195,6 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:44:17-77
 	android:name
 		ADDED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml:44:27-74
-profileable
-INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml reason: profileable injection requested
-INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml
-INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml
-	android:enabled
-		INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml
-	android:shell
-		INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml
 uses-sdk
 INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\andre\OneDrive\Escritorio\Desarrollo-para-dispositivos-Inteligentes\utngrunner\src\main\AndroidManifest.xml

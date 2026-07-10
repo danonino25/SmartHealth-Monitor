@@ -16,8 +16,9 @@
         android:theme="@style/Theme.SmartHealthTV">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".TVActivity"
             android:exported="true"
+            android:banner="@drawable/banner_tv"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -20,7 +20,9 @@ android {
             isMinifyEnabled = false
         }
     }
-
+    buildFeatures {
+        compose = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -31,14 +33,21 @@ android {
 }
 
 dependencies {
-    implementation(project(":app")) // para reusar SmartHealthRepository y LecturaFC
+    implementation(project(":app"))
 
-    implementation("androidx.leanback:leanback:1.0.0")
+    // Compose for TV — reemplaza Leanback Library
+    implementation("androidx.tv:tv-foundation:1.0.0")
+    implementation("androidx.tv:tv-material:1.0.0")
+
+    // Compose base (si no está ya)
+    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.navigation:navigation-compose:2.8.5")
+
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    // ELIMINAR si existía: implementation("androidx.leanback:leanback:...")
 }

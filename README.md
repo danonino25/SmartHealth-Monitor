@@ -45,6 +45,33 @@ Paso 2 — PR y Tag v1.2.0
 12.Merge pull request → Confirm merge.
 Checklist de autoevaluación — Unidad II completa
 
+## Arquitectura — SmartHealth Monitor
+
+```
+Sensor PPG (Wear OS)
+    │ Health Services API
+    ▼
+PassiveListenerService (wear)
+    │ MessageClient (BLE)
+    ▼
+WearListenerService (app)
+    │ SmartHealthRepository
+    ▼
+StateFlow<Int> (fcActual) ──────────────────────┐
+    │                                            │
+    ▼                                            ▼
+DashboardViewModel (app)              TvViewModel (tv)
+    │ collectAsState()                     │ collectAsState()
+    ▼                                            ▼
+DashboardScreen (Compose)          TvCatalogScreen (Compose TV)
+    └── CastButton ──► Chromecast (Remote Playback)
+
+Room DB (LecturaFC) ◄── Repository ──► Flow<List<LecturaFC>>
+    │
+    ┌────────────────┴────────────────┐
+    ▼                                 ▼
+HistorialScreen (app)         TvCatalogScreen (tv)
+```
 
 ## Capturas de pantalla
 

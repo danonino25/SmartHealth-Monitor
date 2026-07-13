@@ -40,10 +40,6 @@ Aplicación Android de monitoreo de salud personal en tiempo real. Desarrollada 
 
 ![WearDashboard](screenshots/wear_dashboard.png)
 
-Paso 2 — PR y Tag v1.2.0
-11.En GitHub: Compare & pull request → título: feat: Wear OS advanced — Rotary Input + WatchFace — S10 Unidad II.
-12.Merge pull request → Confirm merge.
-Checklist de autoevaluación — Unidad II completa
 
 ## Arquitectura — SmartHealth Monitor
 

@@ -25,5 +25,27 @@ class WearDashboardViewModel : ViewModel() {
                 viewModelScope,
                 SharingStarted.WhileSubscribed(5_000),
                 emptyList()
+
             )
+    private val mqttPublisher = MqttWearPublisher(application)
+
+    init {
+        mqttPublisher.connect()
+        viewModelScope.launch {
+            heartRateSource.heartRate.collect { bpm ->
+                _state.update { it.copy(fcActual = bpm) }
+                val estado = when {
+                    bpm < 60 -> "FC Baja"
+                    bpm > 100 -> "FC Alta"
+                    else -> "Normal"
+                }
+                mqttPublisher.publishFC(bpm, estado)
+            }
+        }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        mqttPublisher.disconnect()
+    }
 }

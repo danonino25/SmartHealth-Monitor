@@ -31,3 +31,24 @@ class TvViewModel(
         }
     }
 }
+private val mqttFlow = MutableStateFlow<TvMessage?>(null)
+private val mqttSubscriber = MqttTvSubscriber(context, mqttFlow)
+
+init {
+    mqttSubscriber.connect()
+    viewModelScope.launch {
+        mqttFlow.collect { tvMsg ->
+            tvMsg ?: return@collect
+            _state.update { it.copy(
+                fcActual = tvMsg.bpm,
+                fcEstado = tvMsg.estado,
+                ultimaHora = tvMsg.hora,
+                isLoading = false
+            )}
+        }
+    }
+}
+
+override fun onCleared() {
+    mqttSubscriber.disconnect()
+}
